@@ -1,8 +1,8 @@
 jobs:
-  - name: foo_ciJob
-    type: ciJob
-    steps:
-      - OUT: img_busybox
+#  - name: foo_ciJob
+#    type: ciJob
+#    steps:
+#      - OUT: img_busybox
       
   - name: do_something
     type: runSh
