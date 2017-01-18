@@ -1,0 +1,12 @@
+jobs:
+  - name: foo_ciJob
+    type: ciJob
+    steps:
+      - OUT: img_busybox
+      
+  - name: do_something
+    type: runSh
+    steps:
+      - IN: img_busybox
+      - TASK:
+        - script: docker images | grep busybox
